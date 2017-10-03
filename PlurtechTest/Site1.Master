@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="PlurtechTest.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <style type="text/css">
+
+.Override .container, .Override .PT1, .Override .PT2, .Override .PT3
+{
+    height: 100%;
+}
+
+.Override *:before, .Override *:after
+{
+    display: none;
+}
+
+.Override.container:before
+{
+    content: '';
+    display: block;
+    float: left;
+    height: 100%;
+}
+
+.Override .fill
+{
+    color: #efefef;
+    background-color: blue;
+    position: relative;
+}
+    .Override .fill:after
+    {
+        content: '';
+        display: block;
+        clear: left;
+    }
+
+.Override .wrapper
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.Override .PT1
+{
+    position: static;
+    background-color: yellow;
+}
+
+.Override .PT2
+{
+    position: static;
+    background-color: green;
+    overflow: auto;
+}
+
+.Override .PT3
+{
+    position: static;
+    background-color: maroon;
+    overflow: auto;
+}
+
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

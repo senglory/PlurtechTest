@@ -1,0 +1,3 @@
+columns in bootstrap
+http://jsfiddle.net/avrahamcool/vtxnF
+

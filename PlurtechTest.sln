@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlurtechTest", "PlurtechTest\PlurtechTest.csproj", "{EC8E119E-E4C7-4347-A598-291FFC465287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootstrapTst", "BootstrapTst\BootstrapTst.csproj", "{AA2E1561-F15F-4A4D-8345-D844FA7CC4D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC8E119E-E4C7-4347-A598-291FFC465287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC8E119E-E4C7-4347-A598-291FFC465287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC8E119E-E4C7-4347-A598-291FFC465287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC8E119E-E4C7-4347-A598-291FFC465287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA2E1561-F15F-4A4D-8345-D844FA7CC4D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA2E1561-F15F-4A4D-8345-D844FA7CC4D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA2E1561-F15F-4A4D-8345-D844FA7CC4D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA2E1561-F15F-4A4D-8345-D844FA7CC4D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
