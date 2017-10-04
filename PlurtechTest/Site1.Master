@@ -6,67 +6,19 @@
 <head runat="server">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
+<%--    <script src="https://github.com/luis-almeida/unveil/raw/master/jquery.unveil.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@1.5.4/src/loadingoverlay.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@1.5.4/extras/loadingoverlay_progress/loadingoverlay_progress.min.js"></script>--%>
     <link href="css/bootstrap.css" rel="stylesheet"/>
     <style type="text/css">
 
-.Override .container, .Override .PT1, .Override .PT2, .Override .PT3
-{
-    height: 100%;
-}
-
-.Override *:before, .Override *:after
-{
-    display: none;
-}
-
-.Override.container:before
-{
-    content: '';
-    display: block;
-    float: left;
-    height: 100%;
-}
-
-.Override .fill
-{
-    color: #efefef;
-    background-color: blue;
-    position: relative;
-}
-    .Override .fill:after
-    {
-        content: '';
-        display: block;
-        clear: left;
-    }
-
-.Override .wrapper
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.no-float {
+  display: table-cell;
+  float: none;
 }
 
 
-.Override .PT1
-{
-    position: static;
-    background-color: yellow;
-}
 
-.Override .PT2
-{
-    position: static;
-    background-color: green;
-    overflow: auto;
-}
-
-.Override .PT3
-{
-    position: static;
-    background-color: maroon;
-    overflow: auto;
-}
 
     </style>
     <title></title>

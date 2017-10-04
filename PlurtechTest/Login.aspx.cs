@@ -15,7 +15,7 @@ namespace PlurtechTest
     {
         protected void ValidateUser(object sender, EventArgs e)
         {
-            if (Login1.UserName.ToLower() == "plurtech" && Login1.Password == "plurtech")
+            if (Login1.UserName.ToLower() == "1" && Login1.Password == "1")
             { 
                 FormsAuthentication.RedirectFromLoginPage(Login1.UserName, Login1.RememberMeSet);
                 return;

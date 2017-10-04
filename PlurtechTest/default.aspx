@@ -2,10 +2,9 @@
 
 <asp:Content ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <asp:ScriptManager EnablePartialRendering="true" runat="server" ID="ScriptManager1" />
-<div class="container Override">
-    <div class="row fill">
-        <div class="wrapper">
-        <div class="col-md-4 PT1" style="background-color:grey">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 no-float" style="background-color:grey">
             <div>
                 Welcome
                 <asp:LoginName ID="LoginName1" runat="server" Font-Bold="true" />
@@ -27,8 +26,8 @@
             </div>
         </div>
 
-        <div class="col-md-4 PT2" style="background-color:gold">
-            <div style="text-align:center"><img src="img/plurtech.jpg" id="imgSmile" alt="smile:)" /></div>
+        <div class="col-md-4 no-float" style="background-color:gold">
+            <div style="text-align:center" ><img src="img/plurtech.jpg" id="imgSmile" alt="smile:)" style="opacity: 0.01" /></div>
             <div style="height: 500px; overflow-y:scroll;">You have to create a main page which shown on test-task-main.gif 
 This page is accessible only to authenticated users, so if user not authenticated he/she will be redirected to login page (test-task-login.gif)
 
@@ -12231,7 +12230,8 @@ In the center of the page user sees a picture of smile and a text long enough so
 In the right page you see 3 drop down list with years, months and days accordingly. When user selects a day then the day of the week of the corresponding date will appear below the drop down lists. Also there is a button to retrieve a date from the web server. When the button is clicked then drop downs are set to the current server date. The number of page postbacks to the server should be as minimal as possible.</div>
         </div>
 
-        <div class="col-md-4 PT3" style="background-color:darkseagreen">
+        <div class="col-md-4 no-float" style="background-color:darkseagreen">
+            <div>&nbsp;</div>
             <asp:UpdatePanel ID="UpdatePanel1" runat="server" >
                 <ContentTemplate>
             <asp:DropDownList ID="ctlYears" runat="server">
@@ -12265,10 +12265,15 @@ In the right page you see 3 drop down list with years, months and days according
             </asp:UpdatePanel>
 
         </div>
-        </div>
     </div>
 </div>
+
     <script>
+        $(document).ready(function () {
+            //$('#imgSmile').unveil();
+            $('#imgSmile').fadeTo('slow', 1);
+        });
+
         $('#imgSmile').hover(
            function () {
                $(this).fadeTo('slow', 0.01);
