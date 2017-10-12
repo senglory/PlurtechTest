@@ -66,6 +66,7 @@
     <Content Include="img\PLURTECH.jpg" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\jquery-1.10.2.js" />
+    <Content Include="js\jquery.unveil.js" />
     <Content Include="Login.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
